@@ -15,6 +15,11 @@ Building a controller-based web API that uses a database.
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api
 
 
+## ASP.NET Core SignalR
+
+Create real-time web app
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio
+
 ## Default endpoint
 
 New ASP.NET Core projects are configured to bind to a random HTTP port between 5000-5300 and a random HTTPS port between 7000-7300. The selected ports are stored in the generated Properties/launchSettings.json file and can be modified by the developer. The launchSetting.json file is only used in local development.
