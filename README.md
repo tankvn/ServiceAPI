@@ -20,6 +20,19 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api
 Create real-time web app
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio
 
+### ASP.NET SignalR vs ASP.NET Core SignalR
+
+|                      | ASP.NET SignalR | ASP.NET Core SignalR |
+| -------------------- | --------------- | -------------------- |
+| **Server NuGet package** | [Microsoft.AspNet.SignalR](https://www.nuget.org/packages/Microsoft.AspNet.SignalR/) | None. Included in the [Microsoft.AspNetCore.App](xref:fundamentals/metapackage-app) shared framework. |
+| **Client NuGet packages** | [Microsoft.AspNet.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNet.SignalR.Client/)<br>[Microsoft.AspNet.SignalR.JS](https://www.nuget.org/packages/Microsoft.AspNet.SignalR.JS/) | [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client/) |
+| **JavaScript client npm package** | [signalr](https://www.npmjs.com/package/signalr) | [`@microsoft/signalr`](https://www.npmjs.com/package/@microsoft/signalr) |
+| **Java client** | [GitHub Repository](https://github.com/SignalR/java-client) (deprecated)  | Maven package [com.microsoft.signalr](https://search.maven.org/artifact/com.microsoft.signalr/signalr) |
+| **Server app type** | ASP.NET (System.Web) or OWIN Self-Host | ASP.NET Core |
+| **Supported server platforms** | .NET Framework 4.5 or later | .NET Core 3.0 or later |
+
+https://learn.microsoft.com/en-us/aspnet/core/signalr/version-differences?view=aspnetcore-9.0
+
 ## Default endpoint
 
 New ASP.NET Core projects are configured to bind to a random HTTP port between 5000-5300 and a random HTTPS port between 7000-7300. The selected ports are stored in the generated Properties/launchSettings.json file and can be modified by the developer. The launchSetting.json file is only used in local development.
