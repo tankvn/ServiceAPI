@@ -1,0 +1,6 @@
+@ServiceAPICore_HostAddress = http://localhost:5033
+
+GET {{ServiceAPICore_HostAddress}}/home/
+Accept: application/json
+
+###
